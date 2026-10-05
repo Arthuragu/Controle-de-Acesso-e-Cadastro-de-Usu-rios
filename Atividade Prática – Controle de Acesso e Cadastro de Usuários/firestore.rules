@@ -1,0 +1,10 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // REGRA DE TESTE (atividade): permite ler/gravar para checar e-mail duplicado
+    // antes do usuário estar autenticado. Em produção, restrinja o acesso.
+    match /usuarios/{doc} {
+      allow read, write: if true;
+    }
+  }
+}

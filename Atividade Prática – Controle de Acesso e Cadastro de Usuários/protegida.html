@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Área Restrita</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f2f4f8; display: flex; justify-content: center; padding: 40px; }
+    .container { background: #fff; padding: 30px; border-radius: 10px; width: 380px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,.15); }
+    button { padding: 10px 25px; border: 0; border-radius: 5px; background: #c62828; color: #fff; cursor: pointer; font-size: 15px; margin-top: 15px; }
+  </style>
+</head>
+<body>
+  <div class="container" id="conteudo" style="display:none;">
+    <h2 id="boasVindas"></h2>
+    <p id="emailUsuario"></p>
+    <button id="btnSair">Sair</button>
+  </div>
+
+  <script type="module" src="protegida.js"></script>
+</body>
+</html>

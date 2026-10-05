@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Área Restrita - Login</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f2f4f8; display: flex; justify-content: center; padding: 30px; }
+    .container { background: #fff; padding: 25px; border-radius: 10px; width: 340px; box-shadow: 0 2px 8px rgba(0,0,0,.15); }
+    h2, h3 { text-align: center; margin-top: 0; }
+    input { width: 100%; padding: 10px; margin: 6px 0; box-sizing: border-box; }
+    button { width: 100%; padding: 10px; margin-top: 8px; border: 0; border-radius: 5px; cursor: pointer; color: #fff; font-size: 15px; }
+    #btnGoogle { background: #db4437; }
+    #btnCadastrar { background: #1a73e8; }
+    #btnEntrar { background: #2e7d32; }
+    hr { margin: 20px 0; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Área Restrita</h2>
+
+    <button id="btnGoogle">Entrar com Google</button>
+    <hr>
+
+    <h3>Já tenho conta</h3>
+    <input type="email" id="loginEmail" placeholder="E-mail">
+    <input type="password" id="loginSenha" placeholder="Senha">
+    <button id="btnEntrar">Entrar</button>
+    <hr>
+
+    <h3>Criar conta</h3>
+    <input type="text" id="cadNome" placeholder="Nome">
+    <input type="email" id="cadEmail" placeholder="E-mail">
+    <input type="password" id="cadSenha" placeholder="Senha (mín. 6 caracteres)">
+    <button id="btnCadastrar">Cadastrar</button>
+  </div>
+
+  <script type="module" src="login.js"></script>
+</body>
+</html>
